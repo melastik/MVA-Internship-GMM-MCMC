@@ -12,11 +12,11 @@ The study is based on Gaussian mixture models (GMM) for statistical analysis, en
 - `requirements.txt` is a text file that contains all the versions of Python librairies used to run the whole project.
 
 ## Dependencies
-# Hardware and working setup
+**Hardware and working setup**
 - macOS Monterey 12.6.1
 - Anaconda 23.1.0 with Python 3.9.12
 
-# Python librairies
+**Python librairies**
 The librairy list and their versions are listed in `requirements.txt`. 
 - Numpy 1.21.5
 - Scipy 1.7.3
