@@ -22,8 +22,8 @@ from functions import get_csv_line, data, sum_mutants_gene, normalization, gauss
 ##################################### Data #################################
 
 # Number of processed row for a given treatment (the number of tested genes)
-# n_row = 11623
-n_row = 50
+n_row = 11623
+# n_row = 50
 
 # Path to files
 treatment_name = 'Diuron_1'
@@ -68,15 +68,15 @@ print("\n")
 num_samples = 10000 # Increased the number of samples for better convergence
 
 # Gibbs sampler
-gibbs = 0 # activation of Gibbs sampler in MH algorithm
-if gibbs == 0:
+gibbs = 1 # activation of Gibbs sampler in MH algorithm
+"""if gibbs == 0:
     print('MH run without Gibbs sampler')
 else:
-    print('MH run with Gibbs sampler')
+    print('MH run with Gibbs sampler')"""
 
 # Gap to the gaussian mixture model parameter sigma_m (if not activated it is equal to 1)
-# var_m = 1e-2 # Gibbs sampler activated
-var_m = 1e-2 # Gibbs sampler not activated
+var_m = 1e-8 # Gibbs sampler activated
+# var_m = 1e-2 # Gibbs sampler not activated
 sigma_m = np.sqrt(var_m)
 
 # Initialization
@@ -84,6 +84,7 @@ initial_p = proportion_in_interval(target_hist, center_values)
 initial_parameters = [initial_p, np.mean(center_values), np.std(center_values)]
 
 # Fixed or not fixed parameters without Gibbs sampler
+# fixed_p = 'None'
 fixed_p = 'None'
 fixed_mu_1 = 'None'
 fixed_sigma_1 = 'None'

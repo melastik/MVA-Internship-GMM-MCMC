@@ -1,7 +1,7 @@
 # Identifying the genetic determinants of chemical toxicity in microalga Chlamydomonas reinhardtii thanks to statistical analysis - Gaussian mixture models estimation 
 
 ## Abstract 
-Microalgae such as *Chlamydomonas reinhardtii* offer significant potential for producing valuable compounds in industry (lipids, pigments, ...). This research project investigates genetic factors behind chemical toxicity responses in Chlamydomonas reinhardtii, focusing on herbicides atrazin, diuron and paraquat. Through experimental tests conducted on mutants of \textit{Chlamydomonas reinhardtii}, we studied the microalga's genome to discern genes exhibiting sensitivity or tolerance to these specific herbicides, determined by evaluating the mutant phenotype ratio. This ratio is an indicator of treatment impact. \\
+Microalgae such as *Chlamydomonas reinhardtii* offer significant potential for producing valuable compounds in industry (lipids, pigments, ...). This research project investigates genetic factors behind chemical toxicity responses in Chlamydomonas reinhardtii, focusing on herbicides atrazin, diuron and paraquat. Through experimental tests conducted on mutants of *Chlamydomonas reinhardtii*, we studied the microalga's genome to discern genes exhibiting sensitivity or tolerance to these specific herbicides, determined by evaluating the mutant phenotype ratio. This ratio is an indicator of treatment impact. \\
 The study is based on Gaussian mixture models (GMM) for statistical analysis, enabling the identification of genes with significant treatment responses. The parameters of GMM were estimated thanks to Metropolis-Hasting algorithm (MH). Various simulations were performed then to show the impact of sampling mutant phenotype ratio in experimental process and how it impacts the statistical analysis. 
 
 ## Content of the repository
@@ -13,8 +13,14 @@ The study is based on Gaussian mixture models (GMM) for statistical analysis, en
 
 ## Dependencies
 **Hardware and working setup**
-- macOS Monterey 12.6.1
-- Anaconda 23.1.0 with Python 3.9.12
+- MacOS Monterey 12.6.1
+- Anaconda 23.1.0 
+- Python 3.9.12
+- R 4.3.1
+
+For installing Anaconda and R see the following link: 
+- https://www.anaconda.com/download/ 
+- https://cran.r-project.org/bin/macosx/ 
 
 **Python librairies**
 The librairy list and their versions are listed in `requirements.txt`. 
@@ -22,26 +28,23 @@ The librairy list and their versions are listed in `requirements.txt`.
 - Scipy 1.7.3
 - tqdm 4.64.1
 - Scipy 1.7.3
-- csv 
+- Csv 
 - Subprocess
 - Rpy2 3.5.13
 - Matplotlib 3.5.3
-- Matplotlib-inline 0.1.6
-- Mpl_toolkits.mplot3d 
 - Pillow 9.2.0
 - iPython 8.6.0
 
-
 ## How to run the code ?
-If you want to create an Anaconda environment to run the project, you need to install Anaconda with the following link https://www.anaconda.com/download/
-Then, open Terminal and run the following lines to create a conda environment for this project :
+If you want to create an Anaconda environment to run the project, open Terminal and run the following lines to create a conda environment:
 
 ```
 conda create --name MVA-Internship-GMM-MCMC-env python=3.9.12
 conda activate MVA-Internship-GMM-MCMC-env
 ```
 
-Clone this repository to run the code: 
+Clone this repository to run the code:
+
 `git clone https://github.com/melastik/MVA-Internship-GMM-MCMC`
 
 Go in the path you clone the repository:

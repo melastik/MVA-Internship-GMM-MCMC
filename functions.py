@@ -82,7 +82,8 @@ def metropolis_hastings(target_hist, x_values, num_samples, mu_0, sigma_0, initi
         
     # With Gibbs sampler
     if gibbs == 1:
-        for i in range(num_samples):
+        print('Running MH algorithm with Gibbs sampler ...')
+        for i in tqdm(range(num_samples)):
             p_proposed, mu_1_proposed,sigma_1_proposed = p_current,mu_1_current,sigma_1_current
             if i%3 == 0 :
                 p_proposed = np.random.uniform(0, 1, 1)
@@ -107,8 +108,8 @@ def metropolis_hastings(target_hist, x_values, num_samples, mu_0, sigma_0, initi
         
     # Without Gibbs sampler
     if gibbs == 0:
-        
-        for i in range(num_samples):
+        print('Running MH algorithm ...')
+        for i in tqdm(range(num_samples)):
             
             if fixed_p == 'None': # for non fixed parameters p
                 p_proposed = np.random.uniform(0, 1, 1)
