@@ -42,7 +42,7 @@ conda activate MVA-Internship-GMM-MCMC-env
 ```
 
 Clone this repository to run the code: 
-'git clone https://github.com/melastik/MVA-Internship-GMM-MCMC'
+`git clone https://github.com/melastik/MVA-Internship-GMM-MCMC`
 
 Go in the path you clone the repository:
 
