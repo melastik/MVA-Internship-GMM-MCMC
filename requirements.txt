@@ -1,0 +1,12 @@
+numpy==1.21.5
+scipy.stats==
+tqdm==4.64.1
+scipy==1.7.3
+csv==
+subprocess==
+rpy2==3.5.13
+matplotlib==3.5.3
+matplotlib-inline==0.1.6
+mpl_toolkits.mplot3d==
+Pillow==9.2.0
+ipython==8.6.0
