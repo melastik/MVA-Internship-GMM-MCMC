@@ -4,12 +4,15 @@
 Microalgae such as *Chlamydomonas reinhardtii* offer significant potential for producing valuable compounds in industry (lipids, pigments, ...). This research project investigates genetic factors behind chemical toxicity responses in Chlamydomonas reinhardtii, focusing on herbicides atrazin, diuron and paraquat. Through experimental tests conducted on mutants of *Chlamydomonas reinhardtii*, we studied the microalga's genome to discern genes exhibiting sensitivity or tolerance to these specific herbicides, determined by evaluating the mutant phenotype ratio. This ratio is an indicator of treatment impact. \\
 The study is based on Gaussian mixture models (GMM) for statistical analysis, enabling the identification of genes with significant treatment responses. The parameters of GMM were estimated thanks to Metropolis-Hasting algorithm (MH). Various simulations were performed then to show the impact of sampling mutant phenotype ratio in experimental process and how it impacts the statistical analysis. 
 
+![Microalgae and valuable compounds](microalgae-valuable-compounds.png "Microalgae and valuable compounds")
+
 ## Content of the repository
 - `functions.py` is a Python script containing the required functions to run the project.
 - `main.py` is a Python script used to set parameters of functions defined in functions.py and plot results. 
 - `Fisher-exact-test.R` is a R script used to run Fisher's exact test on simulated data from main.py and generate a .csv file that contains the p-values for a given treatment. 
 - `data_example.csv` is a table containing fictive data to run Python script
 - `requirements.txt` is a text file that contains all the versions of Python librairies used to run the whole project.
+- `Poster_M2_Internship_MVA.pdf` is a poster summarizing the project. 
 
 ## Dependencies
 **Hardware and working setup**

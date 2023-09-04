@@ -26,18 +26,13 @@ n_row = 11623
 # n_row = 50
 
 # Path to files
-treatment_name = 'Diuron_1'
+treatment_name = 'data_example'
 csv_file = f'{treatment_name}.csv'
 print(f'\n{treatment_name}.csv processing ...')
 table_list = data(csv_file,n_row)
 
 # Histogram data - Sum lines for 2 x 9 contingency tables
-atrazin_1_sum_line_2x9 = [4, 10, 29, 535, 37114, 440, 0, 0, 0]
-atrazin_2_sum_line_2x9 = [10, 22, 99, 941, 36560, 499, 1, 0, 0]
-diuron_1_sum_line_2x9 = [0, 6, 50, 810, 34837, 2412, 17, 0, 0]
-diuron_2_sum_line_2x9 = [3, 1, 47, 613, 35666, 1796, 6, 0, 0]
-paraquat_1_sum_line_2x9 = [34, 45, 288, 2894, 31576, 3103, 182, 10, 0]
-paraquat_2_sum_line_2x9 = [10, 23, 98, 1550, 33820, 2515, 112, 4, 0]
+data_example_sum_line_2x9 = [84, 253, 50, 1152, 33463, 1340, 748, 358, 97]
 
 # Linear values for Phi
 x_values_linear = [1e-9, 0.062, 0.12, 0.25, 0.5, 2, 4, 8, 16, 32]
@@ -50,7 +45,7 @@ x_values_center_log = np.log(x_values_center)
 x_values_continuous_log = np.log(x_values_continuous)
 
 # Choice of the studied treatment
-treatment = diuron_1_sum_line_2x9
+treatment = data_example_sum_line_2x9
 normalized_treatment = normalization(treatment)
 
 # Target histogram data and center values
